@@ -23,7 +23,7 @@ while True:
         item = input("Enter the item to add: ").lower().strip()
         shopping_list.append(item)
         print(item, "has been added to shopping list")
-
+        
     elif choice == '2':
         # Prompt for and remove an item
         item = input("Enter the item to remove: ").lower().strip()
@@ -41,7 +41,7 @@ while True:
         if check_emptylist(shopping_list=shopping_list) == True:
             pass
         else:
-            
+
             for each_item in shopping_list:
                print(each_item)
             
