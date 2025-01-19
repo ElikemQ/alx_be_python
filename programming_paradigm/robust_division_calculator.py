@@ -11,7 +11,8 @@ def safe_divide(numerator, denominator):
 
     try:
         if denominator == 0:
-            print(ZeroDivisionError("Error: Cannot divide by zero."))
+            ZeroDivisionError
+            print("Error: Cannot divide by zero.")
         return f"The result of the division is {numerator/denominator}"
     except ZeroDivisionError as e:
         print(f"Error: Cannot divide by zero. {e}")
