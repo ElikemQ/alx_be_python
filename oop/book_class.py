@@ -4,7 +4,7 @@ class Book:
         self.author = author
         self.year = year
 
-    def __delattr__(self, name):
+    def __del__(self):
         return f"Deleting {self.title}"
 
     def __str__(self):
